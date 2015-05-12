@@ -2361,6 +2361,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="main" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2373,7 +2374,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="C2" library="custom-std" deviceset="CAP" device="0603-CAP" value="2n2"/>
 <part name="C3" library="custom-std" deviceset="CAP" device="0603-CAP" value="100n"/>
 <part name="C4" library="custom-std" deviceset="CAP" device="0603-CAP" value="100n"/>
-<part name="C5" library="custom-std" deviceset="CAP" device="0603-CAP"/>
+<part name="C5" library="custom-std" deviceset="CAP" device="0603-CAP" value="100n"/>
 <part name="C6" library="custom-std" deviceset="CAP" device="0603-CAP" value="100n"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
@@ -2387,11 +2388,15 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="C7" library="custom-std" deviceset="CAP" device="0603-CAP" value="2u2"/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="C8" library="custom-std" deviceset="CAP" device="0603-CAP" value="10nF"/>
+<part name="C8" library="custom-std" deviceset="CAP" device="0603-CAP" value="DNM">
+<variant name="main" populate="no"/>
+</part>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="R1" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G"/>
+<part name="R1" library="custom-std" deviceset="RES" device="0603-RES" value="DNM">
+<variant name="main" populate="no"/>
+</part>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="IRLML2502PFCNT-ND"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="IRLML2502PFCNT-ND"/>
 <part name="LED1" library="led" deviceset="*P4" device="-BOTTOM" technology="LA"/>
 <part name="LED2" library="led" deviceset="*P4" device="-BOTTOM" technology="LA"/>
 <part name="LED3" library="led" deviceset="*P4" device="-BOTTOM" technology="LA"/>
@@ -2403,28 +2408,36 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="VCC" device=""/>
-<part name="R2" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R3" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R4" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R5" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R6" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R7" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R8" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R9" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R10" library="custom-std" deviceset="RES" device="0603-RES" value="100R"/>
-<part name="R11" library="custom-std" deviceset="RES" device="0603-RES" value="100R"/>
-<part name="R12" library="custom-std" deviceset="RES" device="0603-RES" value="100R"/>
+<part name="R2" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R3" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R4" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R5" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R6" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R7" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R8" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R9" library="custom-std" deviceset="RES" device="0603-RES" value="200R"/>
+<part name="R10" library="custom-std" deviceset="RES" device="0603-RES" value="51R"/>
+<part name="R11" library="custom-std" deviceset="RES" device="0603-RES" value="51R"/>
+<part name="R12" library="custom-std" deviceset="RES" device="0603-RES" value="51R"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="TP1" library="SparkFun" deviceset="TEST-POINT" device="3"/>
 <part name="TP2" library="SparkFun" deviceset="TEST-POINT" device="3"/>
-<part name="R13" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R14" library="custom-std" deviceset="RES" device="0603-RES"/>
+<part name="R13" library="custom-std" deviceset="RES" device="0603-RES" value="DNM">
+<variant name="main" populate="no"/>
+</part>
+<part name="R14" library="custom-std" deviceset="RES" device="0603-RES" value="DNM">
+<variant name="main" populate="no"/>
+</part>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
-<part name="R15" library="custom-std" deviceset="RES" device="0603-RES"/>
+<part name="R15" library="custom-std" deviceset="RES" device="0603-RES" value="10k"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="R16" library="custom-std" deviceset="RES" device="0603-RES"/>
-<part name="R17" library="custom-std" deviceset="RES" device="0603-RES"/>
+<part name="R16" library="custom-std" deviceset="RES" device="0603-RES" value="DNM">
+<variant name="main" populate="no"/>
+</part>
+<part name="R17" library="custom-std" deviceset="RES" device="0603-RES" value="DNM">
+<variant name="main" populate="no"/>
+</part>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="J1" library="customs" deviceset="CON_HEADER_1X08" device=""/>
@@ -2438,8 +2451,13 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <sheet>
 <plain>
 <text x="175.26" y="96.52" size="1.778" layer="91">Shield Tank Cap
-(Optional)</text>
+(10nF, Optional)</text>
 <text x="111.76" y="160.02" size="1.778" layer="91" rot="R90">VREF Bypass</text>
+<text x="160.02" y="45.72" size="1.778" layer="91">R13/R14 mounted for I2C operation
+R16/R17 mounted for 'terminating' coin only on I2C bus</text>
+<text x="200.66" y="91.44" size="1.778" layer="91">Programming requires:
+SWDIO, SWDCLK, XRES, VCC, GND</text>
+<text x="7.62" y="5.08" size="1.778" layer="91">TODO: Check value of C2, might need to reduce it for our uses?</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="134.62" y="119.38"/>
@@ -2487,22 +2505,22 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <instance part="R7" gate="G$1" x="68.58" y="83.82" rot="R90"/>
 <instance part="R8" gate="G$1" x="76.2" y="83.82" rot="R90"/>
 <instance part="R9" gate="G$1" x="83.82" y="83.82" rot="R90"/>
-<instance part="R10" gate="G$1" x="60.96" y="137.16" rot="R180"/>
-<instance part="R11" gate="G$1" x="60.96" y="127" rot="R180"/>
-<instance part="R12" gate="G$1" x="60.96" y="121.92" rot="R180"/>
-<instance part="SUPPLY14" gate="GND" x="50.8" y="119.38"/>
+<instance part="R10" gate="G$1" x="55.88" y="137.16" rot="R180"/>
+<instance part="R11" gate="G$1" x="55.88" y="127" rot="R180"/>
+<instance part="R12" gate="G$1" x="55.88" y="116.84" rot="R180"/>
+<instance part="SUPPLY14" gate="GND" x="43.18" y="114.3"/>
 <instance part="TP1" gate="G$1" x="45.72" y="137.16" rot="R180"/>
 <instance part="TP2" gate="G$1" x="45.72" y="127" rot="R180"/>
-<instance part="R13" gate="G$1" x="165.1" y="68.58" rot="R180"/>
+<instance part="R13" gate="G$1" x="157.48" y="68.58" rot="R180"/>
 <instance part="R14" gate="G$1" x="165.1" y="63.5" rot="R180"/>
 <instance part="P+6" gate="VCC" x="198.12" y="78.74"/>
 <instance part="SUPPLY15" gate="GND" x="187.96" y="73.66"/>
 <instance part="R15" gate="G$1" x="198.12" y="134.62" rot="R270"/>
 <instance part="P+2" gate="VCC" x="198.12" y="142.24"/>
-<instance part="R16" gate="G$1" x="203.2" y="58.42"/>
-<instance part="R17" gate="G$1" x="182.88" y="58.42"/>
-<instance part="P+4" gate="VCC" x="170.18" y="58.42" rot="R90"/>
-<instance part="P+7" gate="VCC" x="210.82" y="63.5"/>
+<instance part="R16" gate="G$1" x="203.2" y="55.88"/>
+<instance part="R17" gate="G$1" x="165.1" y="55.88"/>
+<instance part="P+4" gate="VCC" x="142.24" y="55.88" rot="R90"/>
+<instance part="P+7" gate="VCC" x="208.28" y="60.96"/>
 <instance part="J1" gate="J" x="215.9" y="76.2"/>
 <instance part="C9" gate="G$1" x="231.14" y="73.66" rot="R180"/>
 <instance part="P+8" gate="1" x="231.14" y="78.74"/>
@@ -2589,7 +2607,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="55.88" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
@@ -2744,13 +2762,12 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="58.42" x2="210.82" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="55.88" x2="208.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -2872,35 +2889,32 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P2[0]"/>
-<wire x1="106.68" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="129.54" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="129.54" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="137.16" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P2[1]"/>
-<wire x1="106.68" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="127" width="0.1524" layer="91"/>
-<junction x="68.58" y="127"/>
+<wire x1="60.96" y1="116.84" x2="60.96" y2="127" width="0.1524" layer="91"/>
+<junction x="60.96" y="127"/>
 </segment>
 </net>
 <net name="SENSE" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SHIELD" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="127" x2="45.72" y2="127" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="127" x2="45.72" y2="127" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -2908,7 +2922,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <segment>
 <pinref part="U1" gate="G$1" pin="P4[1]"/>
 <wire x1="144.78" y1="88.9" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -2923,13 +2937,13 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <net name="N$20" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="68.58" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="66.04" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="58.42" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="58.42" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="55.88" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="55.88" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
 <junction x="193.04" y="68.58"/>
 <pinref part="J1" gate="J" pin="8"/>
 </segment>
@@ -2942,8 +2956,8 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <wire x1="215.9" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="68.58" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="58.42" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="55.88" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="55.88" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
 <junction x="190.5" y="63.5"/>
 <pinref part="J1" gate="J" pin="7"/>
 </segment>

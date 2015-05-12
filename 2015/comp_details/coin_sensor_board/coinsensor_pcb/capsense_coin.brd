@@ -812,6 +812,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="main" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -1007,15 +1008,15 @@ design rules under a new name.</description>
 <element name="C2" library="custom-std" package="0603C" value="2n2" x="69.85" y="44.958" rot="MR180"/>
 <element name="C3" library="custom-std" package="0603C" value="100n" x="80.518" y="44.704" rot="MR0"/>
 <element name="C4" library="custom-std" package="0603C" value="100n" x="70.612" y="57.404" rot="MR180"/>
-<element name="C5" library="custom-std" package="0603C" value="" x="75.946" y="61.214" rot="MR0"/>
+<element name="C5" library="custom-std" package="0603C" value="100n" x="75.946" y="61.214" rot="MR0"/>
 <element name="C6" library="custom-std" package="0603C" value="100n" x="75.946" y="63.5" rot="MR0"/>
 <element name="C7" library="custom-std" package="0603C" value="2u2" x="83.492" y="62.778" rot="MR90"/>
-<element name="C8" library="custom-std" package="0603C" value="10nF" x="71.0692" y="51.2826" rot="MR270"/>
-<element name="R1" library="custom-std" package="0603R" value="" x="69.85" y="46.7868" rot="MR180"/>
-<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="89.238" y="53" rot="MR180">
+<element name="C8" library="custom-std" package="0603C" value="DNM" x="71.0692" y="51.2826" populate="no" rot="MR270"/>
+<element name="R1" library="custom-std" package="0603R" value="DNM" x="69.85" y="46.7868" populate="no" rot="MR180"/>
+<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23" value="IRLML2502PFCNT-ND" x="89.238" y="53" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-08345" x="89.238" y="53" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="88.1048" y="45.1728" rot="MR180">
+<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="IRLML2502PFCNT-ND" x="88.1048" y="45.1728" rot="MR180">
 <attribute name="PROD_ID" value="TRANS-08345" x="88.1048" y="45.1728" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="LED1" library="led" package="P47F-BOTTOM" value="LAP4-BOTTOM" x="125" y="50" rot="MR90"/>
@@ -1026,24 +1027,24 @@ design rules under a new name.</description>
 <element name="LED6" library="led" package="P47F-BOTTOM" value="LAP4-BOTTOM" x="112" y="18" rot="MR135"/>
 <element name="LED7" library="led" package="P47F-BOTTOM" value="LAP4-BOTTOM" x="48" y="18" rot="MR225"/>
 <element name="LED8" library="led" package="P47F-BOTTOM" value="LAP4-BOTTOM" x="48" y="82" rot="MR135"/>
-<element name="R2" library="custom-std" package="0603R" value="" x="93" y="51" rot="MR180"/>
-<element name="R3" library="custom-std" package="0603R" value="" x="93" y="49" rot="MR180"/>
-<element name="R4" library="custom-std" package="0603R" value="" x="66" y="51" rot="MR0"/>
-<element name="R5" library="custom-std" package="0603R" value="" x="66" y="55" rot="MR0"/>
-<element name="R6" library="custom-std" package="0603R" value="" x="93" y="53" rot="MR180"/>
-<element name="R7" library="custom-std" package="0603R" value="" x="93" y="47" rot="MR180"/>
-<element name="R8" library="custom-std" package="0603R" value="" x="66" y="49" rot="MR0"/>
-<element name="R9" library="custom-std" package="0603R" value="" x="66" y="53" rot="MR0"/>
-<element name="R10" library="custom-std" package="0603R" value="100R" x="88.646" y="61.214" rot="MR180"/>
-<element name="R11" library="custom-std" package="0603R" value="100R" x="88.646" y="58.674" rot="MR180"/>
-<element name="R12" library="custom-std" package="0603R" value="100R" x="88.646" y="56.388" rot="MR180"/>
+<element name="R2" library="custom-std" package="0603R" value="200R" x="93" y="51" rot="MR180"/>
+<element name="R3" library="custom-std" package="0603R" value="200R" x="93" y="49" rot="MR180"/>
+<element name="R4" library="custom-std" package="0603R" value="200R" x="66" y="51" rot="MR0"/>
+<element name="R5" library="custom-std" package="0603R" value="200R" x="66" y="55" rot="MR0"/>
+<element name="R6" library="custom-std" package="0603R" value="200R" x="93" y="53" rot="MR180"/>
+<element name="R7" library="custom-std" package="0603R" value="200R" x="93" y="47" rot="MR180"/>
+<element name="R8" library="custom-std" package="0603R" value="200R" x="66" y="49" rot="MR0"/>
+<element name="R9" library="custom-std" package="0603R" value="200R" x="66" y="53" rot="MR0"/>
+<element name="R10" library="custom-std" package="0603R" value="51R" x="88.646" y="61.214" rot="MR180"/>
+<element name="R11" library="custom-std" package="0603R" value="51R" x="88.646" y="58.674" rot="MR180"/>
+<element name="R12" library="custom-std" package="0603R" value="51R" x="88.646" y="56.388" rot="MR180"/>
 <element name="TP1" library="SparkFun" package="PAD.03X.03" value="TEST-POINT3" x="97.79" y="61.214"/>
 <element name="TP2" library="SparkFun" package="PAD.03X.03" value="TEST-POINT3" x="109.474" y="76.454"/>
-<element name="R13" library="custom-std" package="0603R" value="" x="73.914" y="43.688" rot="MR90"/>
-<element name="R14" library="custom-std" package="0603R" value="" x="75.946" y="43.688" rot="MR90"/>
-<element name="R15" library="custom-std" package="0603R" value="" x="70.612" y="55.118" rot="MR180"/>
-<element name="R16" library="custom-std" package="0603R" value="" x="69.85" y="41.148" rot="MR0"/>
-<element name="R17" library="custom-std" package="0603R" value="" x="69.85" y="43.18" rot="MR180"/>
+<element name="R13" library="custom-std" package="0603R" value="DNM" x="73.914" y="43.688" populate="no" rot="MR90"/>
+<element name="R14" library="custom-std" package="0603R" value="DNM" x="75.946" y="43.688" populate="no" rot="MR90"/>
+<element name="R15" library="custom-std" package="0603R" value="10k" x="70.612" y="55.118" rot="MR180"/>
+<element name="R16" library="custom-std" package="0603R" value="DNM" x="69.85" y="41.148" populate="no" rot="MR0"/>
+<element name="R17" library="custom-std" package="0603R" value="DNM" x="69.85" y="43.18" populate="no" rot="MR180"/>
 <element name="J1" library="customs" package="DF13C-VERTSMD" value="CON_HEADER_1X08" x="80.264" y="40.64" rot="MR0"/>
 <element name="C9" library="custom-std" package="0603C" value="2u2" x="78.74" y="42.926" rot="MR180"/>
 <element name="C10" library="custom-std" package="0603C" value="2u2" x="79.4004" y="65.5066" rot="MR0"/>
