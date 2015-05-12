@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="CapSense_1" BASE="0x0" SIZE="0x0" desc="" visible="true">
+    <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="CapSense_1_IDAC1" BASE="0x0" SIZE="0x0" desc="IDAC" visible="true">
+      <block name="cy_psoc4_idac" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <register name="CSD_IDAC_POLARITY" address="0x40080004" bitWidth="32" desc=" CSD IDAC Polarity" />
+      <register name="CSD_IDAC" address="0x40080008" bitWidth="32" desc=" CSD IDAC register" />
+      <register name="CSD_TRIM1" address="0x4008FF00" bitWidth="32" desc=" CSD IDAC TRIM1" />
+      <register name="CSD_TRIM2" address="0x4008FF04" bitWidth="32" desc=" CSD IDAC TRIM2" />
+    </block>
+    <block name="ZeroTerminal_7" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="or_sclk2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="SenseClk" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="Cmod" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="SampleClk" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="CSD_FFB" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="Sns" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="CapSense_1_IDAC2" BASE="0x0" SIZE="0x0" desc="IDAC" visible="true">
+      <block name="cy_psoc4_idac" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+      <register name="CSD_IDAC_POLARITY" address="0x40080004" bitWidth="32" desc=" CSD IDAC Polarity" />
+      <register name="CSD_IDAC" address="0x40080008" bitWidth="32" desc=" CSD IDAC register" />
+      <register name="CSD_TRIM1" address="0x4008FF00" bitWidth="32" desc=" CSD IDAC TRIM1" />
+      <register name="CSD_TRIM2" address="0x4008FF04" bitWidth="32" desc=" CSD IDAC TRIM2" />
+    </block>
+    <block name="ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  </block>
+  <block name="LED1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="LED0" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+</blockRegMap>
