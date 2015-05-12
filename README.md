@@ -7,3 +7,6 @@ need something from my teaching (source files, example code, etc.).
 If you are taking the course, please consider the material on BBLearn (at dal.ca/bblearn) to be the
 definitive resource. Things on this git repo are often *incomplete* or possibly even wrong for your
 class.
+
+Everything inside this repo can be assumed to be licensed CC-BY where possible (i.e. there is no more
+restrictive license placed on it).
