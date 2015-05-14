@@ -40,7 +40,7 @@ int main()
         
         rawReading = CapSense_1_GetDiffCountData(0);
         
-        if (rawReading > 0x70){
+        if (rawReading > 0x200){
             LED1_Write(0);
             while(1);
         }
